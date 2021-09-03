@@ -10,6 +10,7 @@ import { SidebarComponent } from './component/sidebar/sidebar.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { SettingsComponent } from './component/settings/settings.component';
 import { UsersComponent } from './component/users/users.component';
+import { BasicComponent } from './basic/basic.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UsersComponent } from './component/users/users.component';
     SidebarComponent,
     ProfileComponent,
     SettingsComponent,
-    UsersComponent
+    UsersComponent,
+    BasicComponent
   ],
   imports: [
     BrowserModule,
