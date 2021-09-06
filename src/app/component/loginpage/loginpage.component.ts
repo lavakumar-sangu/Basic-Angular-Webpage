@@ -1,4 +1,6 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component,Input } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-loginpage',
@@ -6,5 +8,12 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./loginpage.component.css']
 })
 export class LoginpageComponent   {
- 
+  name = ""
+
+  constructor( ) {}
+
+  ngOnInit(): void {
+  
+  }
+
 }

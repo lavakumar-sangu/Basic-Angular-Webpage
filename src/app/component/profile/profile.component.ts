@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output} from '@angular/core';
 
 @Component({
   selector: 'app-profile',
@@ -6,5 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
+  constructor(){}
 
-}
+  }
+
+
+

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basic-angular-webpage';
+  name: any;
+  @Input() msgfromlogin: any[];
 }
