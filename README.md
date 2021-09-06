@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BasicAngularWebpage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
@@ -25,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# Basic-Angular-Webpage
+>>>>>>> e9a0ecbd814a07165e94ada07ae4e62e9c3ad0ec
