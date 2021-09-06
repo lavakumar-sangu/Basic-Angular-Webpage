@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CoonecterService } from 'src/app/coonecter.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,13 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  name: any;
-  @Input() msgfromlogin: any[];
+text = ""
+  constructor(public data : CoonecterService){}
 
-  constructor() {
-  }
-
-  ngOnInit(): void {
-       
+  ngOnInit() {
+    this.data.share.subscribe(x => this.text = x)
   }
 }

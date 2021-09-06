@@ -8,5 +8,4 @@ import { Component, Input} from '@angular/core';
 export class AppComponent {
   title = 'basic-angular-webpage';
   name: any;
-  @Input() msgfromlogin: any[];
 }

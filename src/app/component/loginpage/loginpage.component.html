@@ -4,10 +4,10 @@
             <img src="\assets\images\KPT.jpg" alt="Keypoint Technologies" style="height: 30%; width: 160px;">
             <div class="container">
                 <label for="uname"><b>Username : </b></label>
-                <input type="text" [(ngModel)]="name" placeholder="Enter Username" name="uname" required><br><br>{{name}}<br><br>
-                <label for="psw"><b>Password :</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
-                <button type="button">Login</button>
+                <input type="text" [(value)]="text" placeholder="Enter Username" #name name="name"><br><br>
+                <label for="uname"><b>Password : </b></label>
+                <input type="password" placeholder="Enter Password" name="psw"><br><br>
+                <button type="submit" (click)="updateText(name.value)">Login</button>
                 <label>
   <input type="checkbox" checked="checked" name="remember"> Remember me
 </label><br><br>
