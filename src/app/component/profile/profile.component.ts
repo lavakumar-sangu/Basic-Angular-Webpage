@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CoonecterService } from 'src/app/coonecter.service';
 
 @Component({
@@ -14,6 +14,4 @@ text = ''
     this.data.share.subscribe(x => this.text = x)
   }
   }
-
-
 

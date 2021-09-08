@@ -3,13 +3,13 @@
         <div style="text-align: center;">
             <img src="\assets\images\KPT.jpg" alt="Keypoint Technologies" style="height: 30%; width: 160px;">
             <div class="container">
-                <label for="uname"><b>Username : </b></label>
-                <input type="text" [(value)]="text" placeholder="Enter Username" #name name="name"><br><br>
-                <label for="uname"><b>Password : </b></label>
-                <input type="password" placeholder="Enter Password" name="psw"><br><br>
-                <button type="submit" (click)="updateText(name.value)">Login</button>
-                <label>
-  <input type="checkbox" checked="checked" name="remember"> Remember me
+                <label for="uname"><b >Username  </b></label>
+                <input type="text" style="margin-left: 20px;" [(value)]="text" placeholder="Enter Username" #name name="name"><br><br>
+                <label for="uname"><b>Password  </b></label>
+                <input type="password" style="margin-left: 20px;" placeholder="Enter Password" name="psw"><br><br>
+                <button type="submit" class=" btn btn-primary " (click)="updateText(name.value)">Login</button>
+                <br><br><label>
+  <input type="checkbox" checked="checked" name="remember" style="margin-left: 20px;"> Remember me
 </label><br><br>
             </div>
             <span class="psw">Forgot <a href="#">password?</a></span>

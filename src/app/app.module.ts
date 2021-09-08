@@ -12,6 +12,7 @@ import { SettingsComponent } from './component/settings/settings.component';
 import { UsersComponent } from './component/users/users.component';
 
 
+
 @NgModule({
   declarations: [
     IntroComponent,
@@ -21,7 +22,7 @@ import { UsersComponent } from './component/users/users.component';
     SidebarComponent,
     ProfileComponent,
     SettingsComponent,
-    UsersComponent,
+    UsersComponent
 
   ],
   imports: [
