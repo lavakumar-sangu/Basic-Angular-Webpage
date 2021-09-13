@@ -1,14 +1,14 @@
 <div class="test">
-    <h1 style="text-align: center;"> {{text}} users profile </h1>
+    <h1 style="text-align: center;"> {{text.name}} users profile </h1>
     <div class="test">
         <div class="container-fluid">
             <div class="container">
                 <label for="uname"><b >Username  </b></label>
-                <input type="text" style="margin-left: 20px;" value="{{text}}" name="name"><br><br>
+                <input type="text" style="margin-left: 20px;" value="{{text.name}}" name="name"><br><br>
                 <label for="uname"><b>Email  </b></label>
-                <input type="email" style="margin-left: 20px;" name="email"><br><br>
+                <input type="email" style="margin-left: 20px;" value="{{text.email}}" name="email"><br><br>
                 <label for="uname"><b>Mobile  </b></label>
-                <input type="text" style="margin-left: 20px;" name="mobno"><br><br>
+                <input type="text" style="margin-left: 20px;" value="{{text.mobile}}" name="mobno"><br><br>
             </div>
         </div>
     </div>

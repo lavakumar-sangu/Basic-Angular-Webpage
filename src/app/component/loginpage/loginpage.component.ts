@@ -8,19 +8,20 @@ import { CoonecterService } from 'src/app/coonecter.service';
 })
 export class LoginpageComponent implements OnInit  {
   name: any;
-  text = ''
-  public obj: any = 
-    {
-      text: '',
-      email:'',
-      num : '',
-    }
+  password: any;
+  email: any;
+  mobno: any;
   constructor(public data : CoonecterService ) {}
 
   ngOnInit() {
   
   }
-  updateText(text: any) {
-    this.data.updateData(text)
+  updateText() {
+    var obj = {
+      name:this.name,
+      email:this.email,
+      mobile:this.mobno
+    }
+    this.data.updateData(obj)
   }
 }

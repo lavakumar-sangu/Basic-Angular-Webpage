@@ -7,7 +7,7 @@ import { CoonecterService } from 'src/app/coonecter.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-text = ""
+  text : any;
   constructor(public data : CoonecterService){}
 
   ngOnInit() {

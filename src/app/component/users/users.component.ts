@@ -7,7 +7,9 @@ import { CoonecterService } from 'src/app/coonecter.service';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-  text = ''
+  text: any;
+  email:any;
+  mobile:any;
 
   constructor(public data : CoonecterService ) { }
 
