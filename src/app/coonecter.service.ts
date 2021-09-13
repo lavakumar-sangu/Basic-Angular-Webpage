@@ -12,5 +12,11 @@ export class CoonecterService {
   updateData(text) {
     this.content.next(text);
   }
+  updateEmail(email) {
+    this.content.next(email)
+  }
+  updateNumber(num) {
+    this.content.next(num)
+  }
 }
 

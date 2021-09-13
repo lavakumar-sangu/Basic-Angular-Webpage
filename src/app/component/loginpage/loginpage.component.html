@@ -7,10 +7,12 @@
                 <input type="text" style="margin-left: 20px;" [(value)]="text" placeholder="Enter Username" #name name="name"><br><br>
                 <label for="uname"><b>Password  </b></label>
                 <input type="password" style="margin-left: 20px;" placeholder="Enter Password" name="psw"><br><br>
+                <label for="uname"><b>Email  </b></label>
+                <input type="email" style="margin-left: 20px;" placeholder="Enter Email" #email name="email"><br><br>
+                <label for="uname"><b>Mobile  </b></label>
+                <input type="text" style="margin-left: 20px;" placeholder="Enter Mobile No" #num name="mobno"><br><br>
                 <button type="submit" class=" btn btn-primary " (click)="updateText(name.value)">Login</button>
-                <br><br><label>
-  <input type="checkbox" checked="checked" name="remember" style="margin-left: 20px;"> Remember me
-</label><br><br>
+                <br><br>
             </div>
             <span class="psw">Forgot <a href="#">password?</a></span>
         </div>

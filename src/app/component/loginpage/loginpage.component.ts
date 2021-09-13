@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CoonecterService } from 'src/app/coonecter.service';
 
-
-
 @Component({
   selector: 'app-loginpage',
   templateUrl: './loginpage.component.html',
@@ -10,15 +8,19 @@ import { CoonecterService } from 'src/app/coonecter.service';
 })
 export class LoginpageComponent implements OnInit  {
   name: any;
-  text = '';
-
+  text = ''
+  public obj: any = 
+    {
+      text: '',
+      email:'',
+      num : '',
+    }
   constructor(public data : CoonecterService ) {}
 
   ngOnInit() {
   
   }
-  updateText(text) {
+  updateText(text: any) {
     this.data.updateData(text)
   }
-
 }
