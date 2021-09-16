@@ -1,0 +1,13 @@
+<div class="container styling test">
+    <h1>Profile</h1>
+    Name :
+    <input type="text" [(ngModel)]="name" placeholder="Enter Name" />
+    <br /><br /> Email :<input type="text" [(ngModel)]="email" placeholder="Enter Email" />
+    <br /><br />
+    <button (click)="buttonClicked()">Add</button>
+    <h3> {{rows | json}} </h3>
+    <div>
+        <h1>Profile-Viewer</h1>
+        <app-data-viewer (removedData)="deletedData=$event" [userData]="rows"></app-data-viewer>
+    </div>
+</div>

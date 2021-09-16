@@ -10,9 +10,8 @@ export class UsersComponent implements OnInit {
   text: any;
   email:any;
   mobile:any;
-
-  constructor(public data : CoonecterService ) { }
-
+  constructor(public data: CoonecterService) { }
+  
   ngOnInit(): void {
     this.data.share.subscribe(x => this.text = x)
   }

@@ -7,15 +7,15 @@ import { CoonecterService } from 'src/app/coonecter.service';
   styleUrls: ['./loginpage.component.css']
 })
 export class LoginpageComponent implements OnInit  {
+  public ParentMsg = "Message From Parent";
+  msg: any;
   name: any;
-  password: any;
   email: any;
   mobno: any;
   constructor(public data : CoonecterService ) {}
-
   ngOnInit() {
-  
   }
+  public obj: Array<{name: string, email: string, mobno:number}> = [];
   updateText() {
     var obj = {
       name:this.name,

@@ -9,7 +9,7 @@ export class CoonecterService {
   public share = this.content.asObservable();
   constructor() { }
 
-  updateData(text) {
+  updateData(text:any) {
     this.content.next(text);
   }
 }
