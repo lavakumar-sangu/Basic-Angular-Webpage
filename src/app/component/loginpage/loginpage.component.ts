@@ -7,6 +7,7 @@ import { CoonecterService } from 'src/app/coonecter.service';
   styleUrls: ['./loginpage.component.css']
 })
 export class LoginpageComponent implements OnInit  {
+  hide = true;
   public ParentMsg = "Message From Parent";
   msg: any;
   name: any;

@@ -1,8 +1,9 @@
-<h1>Users Data </h1>
-<td class="test">Name</td>
-<td class="test">Email</td>
+<mat-card>
+    <mat-icon>account_circle</mat-icon>Profile-Viewer</mat-card><br>
+<td class="test">NAME</td>
+<td class="test">EMAIL</td>
 <tr *ngFor="let row of userData">
     <td>{{row.name}}</td>
     <td>{{row.email}}</td>
-    <button (click)="deleteButton()">remove</button>
+    <button mat-raised-button color="warn" (click)="deleteButton()"><mat-icon>delete</mat-icon></button>
 </tr>

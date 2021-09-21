@@ -1,15 +1,22 @@
 <div class="test">
-    <h1 style="text-align: center;"> {{text.name}} users profile </h1>
+    <h1 style="text-align: center;"> {{text.name}} Profile </h1>
     <div class="test">
-        <div class="container-fluid">
-            <div class="container">
-                <label for="uname"><b >Username  </b></label>
-                <input type="text" style="margin-left: 20px;" value="{{text.name}}" name="name"><br><br>
-                <label for="uname"><b>Email  </b></label>
-                <input type="email" style="margin-left: 20px;" value="{{text.email}}" name="email"><br><br>
-                <label for="uname"><b>Mobile  </b></label>
-                <input type="text" style="margin-left: 20px;" value="{{text.mobile}}" name="mobno"><br><br>
-            </div>
-        </div>
+        <form class="example-form">
+            <mat-form-field appearance="outline" class="example-full-width">
+                <mat-label>User Name</mat-label>
+                <input matInput placeholder="name" value="{{text.name}}">
+            </mat-form-field><br><br>
+            <mat-form-field appearance="outline" class="example-full-width">
+                <mat-label>User Email</mat-label>
+                <input matInput placeholder="email" value="{{text.email}}">
+            </mat-form-field><br><br>
+            <mat-form-field appearance="outline" class="example-full-width">
+                <mat-label>User Mobile</mat-label>
+                <input matInput placeholder="mobile" value="{{text.mobile}}">
+            </mat-form-field><br><br>
+            <button mat-fab color="accent" aria-label="Example icon button with a delete icon" style="margin-left: 45%;">
+                <mat-icon>edit</mat-icon>
+              </button>
+        </form>
     </div>
 </div>
