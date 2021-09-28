@@ -8,5 +8,5 @@
 <tr *ngFor="let row of userData">
     <td>{{row.name}}</td>
     <td>{{row.email}}</td>
-    <button mat-raised-button color="warn" (click)="deleteButton()"><mat-icon>delete</mat-icon></button>
+    <button mat-icon-button color="accent" let i=index; (click)="deleteButton(i)"><mat-icon>delete</mat-icon></button>
 </tr>

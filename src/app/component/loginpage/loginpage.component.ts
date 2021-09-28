@@ -8,7 +8,6 @@ import { CoonecterService } from 'src/app/coonecter.service';
 })
 export class LoginpageComponent implements OnInit  {
   hide = true;
-  public ParentMsg = "Message From Parent";
   msg: any;
   name: any;
   email: any;
@@ -24,5 +23,7 @@ export class LoginpageComponent implements OnInit  {
       mobile:this.mobno
     }
     this.data.updateData(obj)
+    console.log(obj);
+    
   }
 }

@@ -14,7 +14,7 @@
         <input [(ngModel)]="email" name="email" matInput placeholder="pat@example.com" required>
     </mat-form-field><br>
 
-    <button mat-raised-button color="primary" (click)="buttonClicked()">Add<mat-icon>person_add</mat-icon></button>
+    <button mat-raised-button color="accent" (click)="buttonClicked()">Add<mat-icon>person_add</mat-icon></button>
     <h3> {{deletedData | json}} </h3>
     <div>
         <app-data-viewer (removedData)="deletedData=$event" [userData]="rows"></app-data-viewer>
